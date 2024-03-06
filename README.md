@@ -1,11 +1,11 @@
 # YOLOv9 for Fracture Detection in Pediatric Wrist Trauma X-ray Images
 
 ## Abstract
-Hospital emergency departments frequently receive lots of bone fracture cases, with pediatric wrist trauma fracture accounting for the majority of them. Before pediatric surgeons perform surgery, they need to ask patients how the fracture occurred and analyze the fracture situation by interpreting X-ray images. The interpretation of X-ray images often requires a combination of techniques from radiologists and surgeons, which requires time-consuming specialized training. With the rise of deep learning in the field of computer vision, network models applying for fracture detection has become an important research topic. In this paper, we train YOLOv8 (the latest version of You Only Look Once) model on the GRAZPEDWRI-DX dataset, and use data augmentation to improve the model performance. The experimental results show that our model have reached the state-of-the-art (SOTA) real-time model performance. Specifically, compared to YOLOv8s models, the mean average precision (mAP 50) of our models improve from 0.604 and 0.625 to 0.612 and 0.631 at the input image size of 640 and 1024, respectively. To enable surgeons to use our model for fracture detection on pediatric wrist trauma X-ray images, we have designed the application "Fracture Detection Using YOLOv8 App" to assist surgeons in diagnosing fractures, reducing the probability of error analysis, and providing more useful information for surgery.
+The introduction of YOLOv9, the latest version of the You Only Look Once (YOLO) series, has led to its widespread adoption across various scenarios. This paper is the first to apply the YOLOv9 algorithm model to the fracture detection task, helping radiologists and surgeons in performing computer-aided diagnosis (CAD). Specifically, this paper trained the model on the GRAZPEDWRI-DX dataset and extended the training set using data augmentation techniques to improve the model performance. Experimental results indicate that compared to the YOLOv8 with ResCBAM model, the YOLOv9 model achieved a higher mean average precision (mAP) 50-95 value of 43.7, surpassing the state-of-the-art (SOTA) performance of 42.2. 
 
-### YOLOv8 architecture
+### Overall Flowchart
 <p align="center">
-  <img src="img/figure_details.jpg" width="640" title="details">
+  <img src="img/figure_flowchart.jpg" width="640" title="details">
 </p>
 
 ## Citation
