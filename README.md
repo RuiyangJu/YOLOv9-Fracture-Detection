@@ -5,7 +5,7 @@ The introduction of YOLOv9, the latest version of the You Only Look Once (YOLO) 
 
 ### Overall Flowchart
 <p align="center">
-  <img src="img/figure_flowchart.jpg" width="640" title="details">
+  <img src="img/figure_flowchart.jpg" width="1024" title="details">
 </p>
 
 ## Citation
