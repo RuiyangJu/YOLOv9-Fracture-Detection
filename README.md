@@ -1,7 +1,7 @@
 # YOLOv9 for Fracture Detection in Pediatric Wrist Trauma X-ray Images
 
 ## Abstract
-The introduction of YOLOv9, the latest version of the You Only Look Once (YOLO) series, has led to its widespread adoption across various scenarios. This paper is the first to apply the YOLOv9 algorithm model to the fracture detection task, helping radiologists and surgeons in performing computer-aided diagnosis (CAD). Specifically, this paper trained the model on the GRAZPEDWRI-DX dataset and extended the training set using data augmentation techniques to improve the model performance. Experimental results indicate that compared to the YOLOv8 with ResCBAM model, the YOLOv9 model achieved a higher mean average precision (mAP) 50-95 value of 43.7, surpassing the state-of-the-art (SOTA) performance of 42.2. 
+The introduction of YOLOv9, the latest version of the You Only Look Once (YOLO) series, has led to its widespread adoption across various scenarios. This paper is the first to apply the YOLOv9 algorithm model to the fracture detection task, helping radiologists and surgeons in performing computer-assisted diagnosis (CAD). Specifically, this paper trained the model on the GRAZPEDWRI-DX dataset and extended the training set using data augmentation techniques to improve the model performance. The experimental results demonstrate that the mean Average Precision (mAP) from 50 to 95 of the YOLOv9 model increased from 42.2 to 43.7, indicating a 2.3% enhancement over the current state-of-the-art (SOTA) model.
 
 ### Overall Flowchart
 <p align="center">
