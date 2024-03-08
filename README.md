@@ -110,6 +110,7 @@ For example:
 ## Model
 ### Weight
 Before training the model, if you plan to use pretrained models, you need put them into `./weights/`.
+
 You can get the YOLOv9 pretained model on the MS COCO 2017 Dataset through [YOLOv9 official GitHub](https://github.com/WongKinYiu/yolov9).
 
 ### Train
