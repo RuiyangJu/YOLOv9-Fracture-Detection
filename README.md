@@ -110,7 +110,7 @@ For example:
                          └── ...
                          
 ## Model
-You can get the open source code of YOLOv9 through [YOLOv9 official GitHub](https://github.com/WongKinYiu/yolov9).
+You can get the YOLOv9 pretained model on the MS COCO 2017 Dataset through [YOLOv9 official GitHub](https://github.com/WongKinYiu/yolov9).
 
 ### Train
 * meta.yaml
