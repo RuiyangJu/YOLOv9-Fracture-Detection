@@ -111,9 +111,10 @@ For example:
                          
 ## Model
 You can get the open source code of YOLOv9 through [YOLOv9 official GitHub](https://github.com/WongKinYiu/yolov9).
+
 ### Train
-Before training the model, make sure the path to the data in the `meta.yaml` file is correct.
 * meta.yaml
+Before training the model, make sure the path to the data in the `meta.yaml` file is correct.
 ```
   # patch: /path/to/GRAZPEDWRI-DX/data
   path: 'E:/GRAZPEDWRI-DX/data'
