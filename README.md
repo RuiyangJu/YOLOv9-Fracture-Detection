@@ -156,16 +156,18 @@ Before training the model, make sure the path to the data in the `meta.yaml` fil
 | Key | Value | Description |
 | :---: | :---: | :---: |
 | data | None | path to data file, i.e. coco128.yaml |
-| imgsz | 640 | size of input images as integer, i.e. 640, 1024 |
+| img | 640 | size of input images as integer, i.e. 640, 1024 |
 | batch | 16 | number of images per batch (-1 for AutoBatch) |
-| save_json | False | save results to JSON file |
-| save_hybrid | False | save hybrid version of labels (labels + additional predictions) |
 | conf | 0.001 | object confidence threshold for detection |
 | iou | 0.6 | intersection over union (IoU) threshold for NMS |
+| device | None | device to run on, i.e. cuda device=0 or device=0,1,2,3 or device=cpu |
+| weights | None | path to trained model, i.e. './best.pt' |
+| save_json | False | save results to JSON file |
+| name | None | the name of the folder |
 
-* CLI
+* Example
 ```
-  yolo val model=/path/to/best.pt data=/path/to/meta.yaml
+  python val_dual.py --data data/meta.yaml --img 640 --batch 32 --conf 0.001 --iou 0.7 --device 0 --weights './best.pt' --save-json --name yolov9_c_640_val
 ```
 
 ## Experimental Results
