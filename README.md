@@ -160,7 +160,7 @@ Before training the model, make sure the path to the data in the `meta.yaml` fil
 | batch | 16 | number of images per batch (-1 for AutoBatch) |
 | conf | 0.001 | object confidence threshold for detection |
 | iou | 0.6 | intersection over union (IoU) threshold for NMS |
-| device | None | device to run on, i.e. cuda device=0 or device=0,1,2,3 or device=cpu |
+| device | None | device to run on, i.e. device=0,1,2,3 or device=cpu |
 | weights | None | path to trained model, i.e. './best.pt' |
 | save_json | False | save results to JSON file |
 | name | None | the name of the folder |
