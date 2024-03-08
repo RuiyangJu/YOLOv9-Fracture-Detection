@@ -111,10 +111,9 @@ For example:
 You can get the YOLOv9 pretained model on the MS COCO 2017 Dataset through [YOLOv9 official GitHub](https://github.com/WongKinYiu/yolov9).
 
 ### Train
-* meta.yaml
-
 Before training the model, make sure the path to the data in the `./data/meta.yaml` file is correct.
 
+* meta.yaml
 ```
   # patch: /path/to/GRAZPEDWRI-DX/data
   path: 'E:/GRAZPEDWRI-DX/data'
