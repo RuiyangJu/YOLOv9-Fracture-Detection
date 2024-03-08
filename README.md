@@ -42,7 +42,6 @@ If you find our paper useful in your research, please consider citing:
 
        GRAZPEDWRI-DX_dataset
           └── data   
-               ├── meta.yaml
                ├── images
                │    ├── train
                │    │    ├── train_img1.png
