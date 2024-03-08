@@ -11,7 +11,7 @@ The introduction of YOLOv9, the latest version of the You Only Look Once (YOLO) 
 ## Citation
 If you find our paper useful in your research, please consider citing:
 
-   To be updated
+
     
 ## Requirements
 * Linux (Ubuntu)
