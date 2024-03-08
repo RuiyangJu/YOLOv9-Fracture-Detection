@@ -11,12 +11,7 @@ The introduction of YOLOv9, the latest version of the You Only Look Once (YOLO) 
 ## Citation
 If you find our paper useful in your research, please consider citing:
 
-    @article{ju2023fracture,
-      title={Fracture Detection in Pediatric Wrist Trauma X-ray Images Using YOLOv8 Algorithm},
-      author={Ju, Rui-Yang and Cai, Weiming},
-      journal={arXiv preprint arXiv:2304.05071},
-      year={2023}
-    }
+   To be updated
     
 ## Requirements
 * Linux (Ubuntu)
