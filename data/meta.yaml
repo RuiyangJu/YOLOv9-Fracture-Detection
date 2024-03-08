@@ -1,5 +1,6 @@
-path: 'C:/Users/Chris/Desktop/yolo/GRAZPEDWRI-DX/data'
-train: 'images/train'
+# patch: /path/to/GRAZPEDWRI-DX/data
+path: 'E:/GRAZPEDWRI-DX/data'
+train: 'images/train_aug'
 val: 'images/valid'
 test: 'images/test'
 
