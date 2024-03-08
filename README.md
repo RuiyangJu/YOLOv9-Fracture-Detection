@@ -175,12 +175,12 @@ Before training the model, make sure the path to the data in the `meta.yaml` fil
 ## Experimental Results
 ### The input image size is 640:
 <p align="center">
-  <img src="img/figure_640.jpg" width="1024" title="640">
+  <img src="img/figure_640.jpg" width="480" title="640">
 </p>
 
 ### The input image size is 1024:
 <p align="center">
-  <img src="img/figure_1024.jpg" width="1024" title="1024">
+  <img src="img/figure_1024.jpg" width="480" title="1024">
 </p>
 
 The prediction examples of our model on the pediatric wrist trauma X-ray images. (a) the manually labeled images, (b) the predicted images.
