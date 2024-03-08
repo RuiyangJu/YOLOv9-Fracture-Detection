@@ -3,9 +3,9 @@
 ## Abstract
 The introduction of YOLOv9, the latest version of the You Only Look Once (YOLO) series, has led to its widespread adoption across various scenarios. This paper is the first to apply the YOLOv9 algorithm model to the fracture detection task, helping radiologists and surgeons in performing computer-assisted diagnosis (CAD). Specifically, this paper trained the model on the GRAZPEDWRI-DX dataset and extended the training set using data augmentation techniques to improve the model performance. The experimental results demonstrate that the mean average precision (mAP) from 50 to 95 of the YOLOv9 model increased from 42.16 to 43.73, indicating a 3.7% enhancement over the current state-of-the-art (SOTA) model.
 
-### Overall Flowchart
+### Comparison
 <p align="center">
-  <img src="img/figure_flowchart.jpg" width="1024" title="details">
+  <img src="img/figure_comparison.jpg" width="640" title="details">
 </p>
 
 ## Citation
@@ -30,6 +30,11 @@ If you find our paper useful in your research, please consider citing:
 ```
 
 ## Dataset
+### Overall Flowchart
+<p align="center">
+  <img src="img/figure_flowchart.jpg" width="1024" title="details">
+</p>
+
 ### Dataset Split
 * GRAZPEDWRI-DX Dataset [(Download Link)](https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193)
 * Download dataset and put images and annotatation into `./GRAZPEDWRI-DX_dataset/data/images`, `./GRAZPEDWRI-DX_dataset/data/labels`.
