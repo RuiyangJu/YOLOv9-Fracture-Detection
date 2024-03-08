@@ -129,46 +129,21 @@ Before training the model, make sure the path to the data in the `./data/meta.ya
 
 | Key | Value | Description |
 | :---: | :---: | :---: |
-| model | None | path to model file, i.e. yolov8n.pt, yolov8n.yaml |
-| data | None | path to data file, i.e. coco128.yaml |
-| epochs | 100 | number of epochs to train for |
-| patience | 50 | epochs to wait for no observable improvement for early stopping of training |
-| batch | 16 | number of images per batch (-1 for AutoBatch) |
-| imgsz | 640 | size of input images as integer, i.e. 640, 1024 |
-| save | True | save train checkpoints and predict results |
-| device | None | device to run on, i.e. cuda device=0 or device=0,1,2,3 or device=cpu |
 | workers | 8 | number of worker threads for data loading (per RANK if DDP) |
-| pretrained | True | (bool or str) whether to use a pretrained model (bool) or a model to load weights from (str) |
-| optimizer | 'auto' | optimizer to use, choices=SGD, Adam, Adamax, AdamW, NAdam, RAdam, RMSProp, auto |
-| resume | False | resume training from last checkpoint |
-| lr0 | 0.01 | initial learning rate (i.e. SGD=1E-2, Adam=1E-3) |
-| momentum | 0.937 | 	SGD momentum/Adam beta1 |
-| weight_decay | 0.0005 | optimizer weight decay 5e-4 |
-| val | True | validate/test during training |
+| device | None | device to run on, i.e. device=0,1,2,3 or device=cpu |
+| model | None | path to model file, i.e. yolov8n.pt, yolov8n.yaml |
+| batch | 16 | number of images per batch (-1 for AutoBatch) |
+| data | None | path to data file, i.e. coco128.yaml |
+| img | 640 | size of input images as integer, i.e. 640, 1024 |
+| cfg | yolo.yaml | path to model.yaml, i.e. yolov9-c.yaml |
+| weights | None | initial weights path |
+| name | exp | save to project/name |
+| hyp | data/hyps/hyp.scratch-high.yaml | hyperparameters path |
+| epochs | 100 | number of epochs to train for |
 
 * Example
 ```
   python train_dual.py --workers 8 --device 0 --batch 16 --data data/meta.yaml --img 640 --cfg models/detect/yolov9-c.yaml --weights weights/yolov9-c.pt --name yolov9-c --hyp hyp.scratch-high.yaml --min-items 0 --epochs 100 --close-mosaic 15
-```
-
-### Validate 
-* Arguments
-
-| Key | Value | Description |
-| :---: | :---: | :---: |
-| data | None | path to data file, i.e. coco128.yaml |
-| img | 640 | size of input images as integer, i.e. 640, 1024 |
-| batch | 16 | number of images per batch (-1 for AutoBatch) |
-| conf | 0.001 | object confidence threshold for detection |
-| iou | 0.6 | intersection over union (IoU) threshold for NMS |
-| device | None | device to run on, i.e. device=0,1,2,3 or device=cpu |
-| weights | None | path to trained model, i.e. './best.pt' |
-| save_json | False | save results to JSON file |
-| name | None | the name of the folder |
-
-* Example
-```
-  python val_dual.py --data data/meta.yaml --img 640 --batch 32 --conf 0.001 --iou 0.7 --device 0 --weights './best.pt' --save-json --name yolov9_c_640_val
 ```
 
 ## Experimental Results
