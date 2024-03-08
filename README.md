@@ -154,12 +154,6 @@ Before training the model, make sure the path to the data in the `meta.yaml` fil
   yolo train model=yolov8n.pt data=./GRAZPEDWRI-DX/data/meta.yaml epochs=100 batch=16 imgsz=640 save=True device=0 workers=4 pretrained=yolov8n.pt optimizer=SGD lr0=0.01
 ```
 
-### Trained Model
-Use gdown to download the trained model from our GitHub:
-```
-  gdown https://github.com/RuiyangJu/Bone_Fracture_Detection_YOLOv8/releases/download/Trained_model/best.pt
-```
-
 ### Validate 
 * Arguments
 
@@ -179,18 +173,16 @@ Use gdown to download the trained model from our GitHub:
 ```
 
 ## Experimental Results
-
+### The input image size is 640:
 <p align="center">
   <img src="img/figure_640.jpg" width="1024" title="640">
 </p>
 
+### The input image size is 1024:
 <p align="center">
   <img src="img/figure_1024.jpg" width="1024" title="1024">
 </p>
 
-<p align="center">
-  <img src="img/figure_result.jpg" width="1024" title="result">
-</p>
 The prediction examples of our model on the pediatric wrist trauma X-ray images. (a) the manually labeled images, (b) the predicted images.
 
 ## Application
