@@ -174,7 +174,7 @@ Before training the model, make sure the path to the data in the `meta.yaml` fil
 
 ## Experimental Results
 ### The input image size is 640:
-<p align="center">
+<p align="left">
   <img src="img/figure_640.jpg" width="480" title="640">
 </p>
 
