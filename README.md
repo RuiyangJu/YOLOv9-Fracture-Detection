@@ -5,7 +5,7 @@ The introduction of YOLOv9, the latest version of the You Only Look Once (YOLO) 
 
 ### Comparison
 <p align="center">
-  <img src="img/figure_comparison.jpg" width="640" title="details">
+  <img src="img/figure_comparison.jpg" width="480" title="details">
 </p>
 
 ## Citation
