@@ -106,12 +106,16 @@ For example:
                     └── test
                          ├── test_annotation1.txt
                          └── ...
-                         
-## Model
-### Weights
-Iif you plan to use pretrained models, you need put them into `./weights/`.
 
-You can get the YOLOv9 pretained models on the MS COCO 2017 Dataset through [YOLOv9 official GitHub](https://github.com/WongKinYiu/yolov9).
+## Performance
+<p align="left">
+  <img src="img/figure_640.jpg" width="480" title="640">
+</p>
+                         
+## Weights
+If you plan to use pretrained models to train, you need put them into `./weights/`.
+
+* You can get the YOLOv9 pretained models on the MS COCO 2017 Dataset through [YOLOv9 official GitHub](https://github.com/WongKinYiu/yolov9).
 
 ### Train
 Before training the model, make sure the path to the data in the `./data/meta.yaml` file is correct.
@@ -145,14 +149,3 @@ Before training the model, make sure the path to the data in the `./data/meta.ya
 ```
   python train_dual.py --workers 8 --device 0 --batch 16 --data data/meta.yaml --img 640 --cfg models/detect/yolov9-c.yaml --weights weights/yolov9-c.pt --name yolov9-c --hyp hyp.scratch-high.yaml --min-items 0 --epochs 100 --close-mosaic 15
 ```
-
-## Experimental Results
-### The input image size is 640:
-<p align="left">
-  <img src="img/figure_640.jpg" width="480" title="640">
-</p>
-
-### The input image size is 1024:
-<p align="left">
-  <img src="img/figure_1024.jpg" width="480" title="1024">
-</p>
