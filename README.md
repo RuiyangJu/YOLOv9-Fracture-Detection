@@ -3,7 +3,7 @@
 ## Abstract
 The introduction of YOLOv9, the latest version of the You Only Look Once (YOLO) series, has led to its widespread adoption across various scenarios. This paper is the first to apply the YOLOv9 algorithm model to the fracture detection task, helping radiologists and surgeons in performing computer-assisted diagnosis (CAD). Specifically, this paper trained the model on the GRAZPEDWRI-DX dataset and extended the training set using data augmentation techniques to improve the model performance. The experimental results demonstrate that the mean average precision (mAP) from 50 to 95 of the YOLOv9 model increased from 42.16 to 43.73, indicating a 3.7% enhancement over the current state-of-the-art (SOTA) model.
 
-### Comparison
+## Comparison
 <p align="left">
   <img src="img/figure_comparison.jpg" width="480" title="details">
 </p>
@@ -24,13 +24,12 @@ If you find our paper useful in your research, please consider citing:
   pip install -r requirements.txt
 ```
 
-## Dataset
-### Overall Flowchart
+## Overall Flowchart
 <p align="left">
   <img src="img/figure_flowchart.jpg" width="1024" title="details">
 </p>
 
-### Dataset Split
+## Dataset Split
 * GRAZPEDWRI-DX Dataset [(Download Link)](https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193)
 * Download dataset and put images and annotatation into `./GRAZPEDWRI-DX_dataset/data/images`, `./GRAZPEDWRI-DX_dataset/data/labels`.
   ```
@@ -66,7 +65,7 @@ If you find our paper useful in your research, please consider citing:
 
 The script will create 3 files: `train_data.csv`, `valid_data.csv`, and `test_data.csv` with the same structure of `dataset.csv`.
 
-### Data Augmentation
+## Data Augmentation
 * Data augmentation of the training set using the addWeighted function doubles the size of the training set.
 ```
   python imgaug.py --input_img /path/to/input/train/ --output_img /path/to/output/train/ --input_label /path/to/input/labels/ --output_label /path/to/output/labels/
@@ -114,10 +113,13 @@ For example:
                          
 ## Weights
 If you plan to use pretrained models to train, you need put them into `./weights/`.
-
 * You can get the YOLOv9 pretained models on the MS COCO 2017 Dataset through [YOLOv9 official GitHub](https://github.com/WongKinYiu/yolov9).
+* Use gdown to download the trained model from our GitHub:
+```
+gdown https://github.com/RuiyangJu/yolov9/releases/download/Trained_Model/Trained.rar
+```
 
-### Train
+## Train
 Before training the model, make sure the path to the data in the `./data/meta.yaml` file is correct.
 
 * meta.yaml
