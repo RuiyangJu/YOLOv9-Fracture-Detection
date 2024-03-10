@@ -116,7 +116,7 @@ If you plan to use pretrained models to train, you need put them into `./weights
 * You can get the YOLOv9 pretained models on the MS COCO 2017 Dataset through [YOLOv9 official GitHub](https://github.com/WongKinYiu/yolov9).
 * Use gdown to download the trained model from our GitHub:
 ```
-gdown https://github.com/RuiyangJu/yolov9/releases/download/Trained_Model/Trained.rar
+  gdown https://github.com/RuiyangJu/YOLOv9-Fracture-Detection/releases/download/Trained/weights.zip
 ```
 
 ## Train
