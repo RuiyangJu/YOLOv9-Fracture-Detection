@@ -8,6 +8,15 @@ The introduction of YOLOv9, the latest version of the You Only Look Once (YOLO) 
   <img src="img/figure_comparison.jpg" width="480" title="details">
 </p>
 
+## Performance
+| Model | Test Size | AP<sup>val</sup> | AP<sub>50</sub><sup>val</sup> | AP<sub>75</sub><sup>val</sup> | Param. | FLOPs |
+| :-- | :-: | :-: | :-: | :-: | :-: | :-: |
+| [**YOLOv9-N (dev)**]() | 640 | **38.3%** | **53.1%** | **41.3%** | **2.0M** | **7.7G** |
+| [**YOLOv9-S**]() | 640 | **46.8%** | **63.4%** | **50.7%** | **7.1M** | **26.4G** |
+| [**YOLOv9-M**]() | 640 | **51.4%** | **68.1%** | **56.1%** | **20.0M** | **76.3G** |
+| [**YOLOv9-C**](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-c-converted.pt) | 640 | **53.0%** | **70.2%** | **57.8%** | **25.3M** | **102.1G** |
+| [**YOLOv9-E**](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-e-converted.pt) | 640 | **55.6%** | **72.8%** | **60.6%** | **57.3M** | **189.0G** |
+
 ## Citation
 If you find our paper useful in your research, please consider citing:
 
@@ -105,11 +114,6 @@ For example:
                     └── test
                          ├── test_annotation1.txt
                          └── ...
-
-## Performance
-<p align="left">
-  <img src="img/figure_640.jpg" width="480" title="640">
-</p>
                          
 ## Weights
 If you plan to use pretrained models to train, you need put them into `./weights/`.
@@ -151,3 +155,12 @@ Before training the model, make sure the path to the data in the `./data/meta.ya
 ```
   python train_dual.py --workers 8 --device 0 --batch 16 --data data/meta.yaml --img 640 --cfg models/detect/yolov9-c.yaml --weights weights/yolov9-c.pt --name yolov9-c --hyp hyp.scratch-high.yaml --min-items 0 --epochs 100 --close-mosaic 15
 ```
+
+## Acknowledgements
+
+<details><summary> <b>Expand</b> </summary>
+
+* [https://github.com/AlexeyAB/darknet](https://github.com/AlexeyAB/darknet)
+* [https://github.com/WongKinYiu/yolor](https://github.com/WongKinYiu/yolor)
+
+</details>
