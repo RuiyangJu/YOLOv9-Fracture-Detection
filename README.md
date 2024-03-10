@@ -1,4 +1,4 @@
-# YOLOv9 for Fracture Detection in Pediatric Wrist Trauma X-ray Images
+# YOLOv9 for Fracture Detection
 
 ## Comparison
 <p align="left">
