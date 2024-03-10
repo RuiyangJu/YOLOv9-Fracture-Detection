@@ -1,8 +1,5 @@
 # YOLOv9 for Fracture Detection in Pediatric Wrist Trauma X-ray Images
 
-## Abstract
-The introduction of YOLOv9, the latest version of the You Only Look Once (YOLO) series, has led to its widespread adoption across various scenarios. This paper is the first to apply the YOLOv9 algorithm model to the fracture detection task, helping radiologists and surgeons in performing computer-assisted diagnosis (CAD). Specifically, this paper trained the model on the GRAZPEDWRI-DX dataset and extended the training set using data augmentation techniques to improve the model performance. The experimental results demonstrate that the mean average precision (mAP) from 50 to 95 of the YOLOv9 model increased from 42.16 to 43.73, indicating a 3.7% enhancement over the current state-of-the-art (SOTA) model.
-
 ## Comparison
 <p align="left">
   <img src="img/figure_comparison.jpg" width="480" title="details">
@@ -11,11 +8,11 @@ The introduction of YOLOv9, the latest version of the You Only Look Once (YOLO) 
 ## Performance
 | Model | Test Size | AP<sup>val</sup> | AP<sub>50</sub><sup>val</sup> | AP<sub>75</sub><sup>val</sup> | Param. | FLOPs |
 | :-- | :-: | :-: | :-: | :-: | :-: | :-: |
-| [**YOLOv9-N (dev)**]() | 640 | **38.3%** | **53.1%** | **41.3%** | **2.0M** | **7.7G** |
-| [**YOLOv9-S**]() | 640 | **46.8%** | **63.4%** | **50.7%** | **7.1M** | **26.4G** |
-| [**YOLOv9-M**]() | 640 | **51.4%** | **68.1%** | **56.1%** | **20.0M** | **76.3G** |
-| [**YOLOv9-C**](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-c-converted.pt) | 640 | **53.0%** | **70.2%** | **57.8%** | **25.3M** | **102.1G** |
-| [**YOLOv9-E**](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-e-converted.pt) | 640 | **55.6%** | **72.8%** | **60.6%** | **57.3M** | **189.0G** |
+| **YOLOv9-N** | 640 | **38.3%** | **53.1%** | **41.3%** | **2.0M** | **7.7G** |
+| **YOLOv9-S** | 640 | **46.8%** | **63.4%** | **50.7%** | **7.1M** | **26.4G** |
+| **YOLOv9-M** | 640 | **51.4%** | **68.1%** | **56.1%** | **20.0M** | **76.3G** |
+| **YOLOv9-C** | 640 | **53.0%** | **70.2%** | **57.8%** | **25.3M** | **102.1G** |
+| **YOLOv9-E** | 640 | **55.6%** | **72.8%** | **60.6%** | **57.3M** | **189.0G** |
 
 ## Citation
 If you find our paper useful in your research, please consider citing:
