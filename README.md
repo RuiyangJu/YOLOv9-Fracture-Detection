@@ -156,7 +156,7 @@ Before training the model, make sure the path to the data in the `./data/meta.ya
   python train_dual.py --workers 8 --device 0 --batch 16 --data data/meta.yaml --img 640 --cfg models/detect/yolov9-c.yaml --weights weights/yolov9-c.pt --name yolov9-c --hyp hyp.scratch-high.yaml --min-items 0 --epochs 100 --close-mosaic 15
 ```
 
-## Acknowledgements
+## Related Works
 
 <details><summary> <b>Expand</b> </summary>
 
