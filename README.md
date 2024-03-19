@@ -2,6 +2,8 @@
 
 >[YOLOv9 for Fracture Detection in Pediatric Wrist Trauma X-ray Images](https://arxiv.org/abs/2403.11249)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/yolov9-for-fracture-detection-in-pediatric/object-detection-on-grazpedwri-dx)](https://paperswithcode.com/sota/object-detection-on-grazpedwri-dx?p=yolov9-for-fracture-detection-in-pediatric)
+
 ## Comparison
 <p align="left">
   <img src="img/figure_comparison.jpg" width="480" title="details">
