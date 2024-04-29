@@ -132,7 +132,7 @@ If you plan to use pretrained models to train, you need put them into `./weights
   gdown https://github.com/RuiyangJu/YOLOv9-Fracture-Detection/releases/download/Trained/weights.zip
 ```
 
-## Train
+## Train & Validate
 Before training the model, make sure the path to the data in the `./data/meta.yaml` file is correct.
 
 * meta.yaml
