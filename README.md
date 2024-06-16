@@ -25,10 +25,14 @@
 If you find our paper useful in your research, please consider citing:
 
     @article{chien2024yolov9,
-      title={YOLOv9 for Fracture Detection in Pediatric Wrist Trauma X-ray Images},
+      title={YOLOv9 for fracture detection in pediatric wrist trauma X-ray images},
       author={Chien, Chun-Tse and Ju, Rui-Yang and Chou, Kuang-Yi and Chiang, Jen-Shiun},
-      journal={arXiv preprint arXiv:2403.11249},
-      year={2024}
+      journal={Electronics Letters},
+      volume={60},
+      number={11},
+      pages={e13248},
+      year={2024},
+      publisher={Wiley Online Library}
     }
     
 ## Requirements
