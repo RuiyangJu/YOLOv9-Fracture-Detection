@@ -2,6 +2,8 @@
 
 >[YOLOv9 for Fracture Detection in Pediatric Wrist Trauma X-ray Images](https://arxiv.org/abs/2403.11249)
 
+## :tada::tada::tada: NEWS: [Our split dataset is available now !!!](https://ruiyangju.github.io/GRAZPEDWRI-DX_JU/)
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/yolov9-for-fracture-detection-in-pediatric/object-detection-on-grazpedwri-dx)](https://paperswithcode.com/sota/object-detection-on-grazpedwri-dx?p=yolov9-for-fracture-detection-in-pediatric)
 
 ## Comparison
@@ -46,12 +48,13 @@ If you find our paper useful in your research, please consider citing:
 </p>
 
 ## Dataset Split
-* GRAZPEDWRI-DX Dataset [(Download Link)](https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193)
+* You can find the original GRAZPEDWRI-DX dataset [here](https://figshare.com/articles/dataset/GRAZPEDWRI-DX/14825193) (unsplit).
 * Download dataset and put images and annotatation into `./GRAZPEDWRI-DX_dataset/data/images`, `./GRAZPEDWRI-DX_dataset/data/labels`.
   ```
     python split.py
   ```
 * The dataset is divided into training, validation, and testing set (70-20-10 %) according to the key `patient_id` stored in `dataset.csv`.
+  You can download our split dataset [here](https://1drv.ms/u/s!Ap6uuRvdVcJWbQfOvTHl5hMuA5o?e=geFa32).
 * The script then will move the files into the relative folder as it is represented here below.
 
 
