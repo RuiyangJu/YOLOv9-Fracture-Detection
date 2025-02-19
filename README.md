@@ -4,7 +4,7 @@
 
 ## :tada::tada::tada: NEWS: [Our split dataset is available now !!!](https://ruiyangju.github.io/GRAZPEDWRI-DX_JU/)
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/yolov9-for-fracture-detection-in-pediatric/object-detection-on-grazpedwri-dx)](https://paperswithcode.com/sota/object-detection-on-grazpedwri-dx?p=yolov9-for-fracture-detection-in-pediatric)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/yolov9-for-fracture-detection-in-pediatric/fracture-detection-on-grazpedwri-dx)](https://paperswithcode.com/sota/fracture-detection-on-grazpedwri-dx?p=yolov9-for-fracture-detection-in-pediatric)
 
 ## Comparison
 <p align="left">
